@@ -1,0 +1,16 @@
+[project]
+name = "m2h"
+version = "0.1.0"
+description = "Convert Markdown to HTML via the macOS clipboard"
+requires-python = ">=3.10"
+dependencies = [
+    "markdown",
+    "pyobjc-framework-Cocoa",
+]
+
+[project.scripts]
+m2h = "m2h:convert"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
