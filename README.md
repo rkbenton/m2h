@@ -18,21 +18,15 @@ A macOS utility that converts Markdown text to HTML using the system clipboard. 
 
 ## Run from anywhere (symlink setup)
 
-To call `m2h` from any directory, first add a shebang line to the script so the OS knows how to execute it directly, then create a symlink on your `PATH`.
+The script already has a shebang (`#!/usr/bin/env -S uv run --script`). To call `m2h` from any directory:
 
-**1. Add a shebang as the very first line of `m2h.py`:**
-
-```python
-#!/usr/bin/env -S uv run --script
-```
-
-**2. Make the script executable:**
+**1. Make the script executable:**
 
 ```bash
 chmod +x /path/to/m2h/m2h.py
 ```
 
-**3. Symlink it onto your PATH:**
+**2. Symlink it onto your PATH:**
 
 ```bash
 ln -s /path/to/m2h/m2h.py /usr/local/bin/m2h
