@@ -11,6 +11,9 @@ dependencies = [
 [project.scripts]
 m2h = "m2h:convert"
 
+[tool.uv]
+exclude-newer = "2026-06-05T00:00:00Z"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
