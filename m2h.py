@@ -61,7 +61,7 @@ def convert():
         pb.setString_forType_(html_output, NSPasteboardTypeHTML)
         pb.setString_forType_(html_output, NSPasteboardTypeString)
         
-        print(f"✅ Success!")
+        print("✅ Success!")
         print(f"   Input:  {len(md_text)} characters (Markdown)")
         print(f"   Output: {len(html_output)} characters (HTML)")
         print("🚀 Your pasteboard now contains the Rich Text/HTML version.")
